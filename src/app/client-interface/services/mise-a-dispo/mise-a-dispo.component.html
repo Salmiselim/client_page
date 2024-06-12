@@ -1,0 +1,21 @@
+<form [formGroup]="miseADispositionForm" (ngSubmit)="onSubmit()">
+  <label for="state">State:</label>
+  <input id="state" formControlName="state" type="text" />
+
+  <label for="livrer">Livrer:</label>
+  <input id="livrer" formControlName="livrer" type="checkbox" />
+
+  <label for="chequesBancaires">Cheques Bancaires:</label>
+  <input id="chequesBancaires" formControlName="chequesBancaires" type="checkbox" />
+
+  <label for="titresDePaiement">Titres de Paiement:</label>
+  <input id="titresDePaiement" formControlName="titresDePaiement" type="checkbox" />
+
+  <label for="documentsBancaires">Documents Bancaires:</label>
+  <input id="documentsBancaires" formControlName="documentsBancaires" type="checkbox" />
+
+  <label for="documentsConfidentiels">Documents Confidentiels:</label>
+  <input id="documentsConfidentiels" formControlName="documentsConfidentiels" type="checkbox" />
+
+  <button type="submit" [disabled]="!miseADispositionForm.valid">Save</button>
+</form>

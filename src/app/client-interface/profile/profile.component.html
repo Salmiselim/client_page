@@ -1,0 +1,103 @@
+<div class="bg">
+</div>
+<div class="app">
+  <div class="header">
+    <img class="logoo" src="../../assets/logo.png">
+    <div class="header-menu">
+      <h2 class="menu-link is-active">Profil</h2>
+    </div>
+    <div class="header-profile">
+      <div class="bunt">
+        <button class="Btn" (click)="logout()">
+          <div class="sign"><svg viewBox="0 0 512 512">
+              <path
+                d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z">
+              </path>
+            </svg></div>
+          <div class="text">Logout</div>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="left-side">
+      <div class="side-wrapper">
+        <div class="side-title">Dashbord</div>
+        <div class="side-menu">
+          <div >
+            <a  (click)="side1()">
+              <svg viewBox="0 0 512 512">
+                <g xmlns="http://www.w3.org/2000/svg" fill="currentColor">
+                  <path d="M0 0h128v128H0zm0 0M192 0h128v128H192zm0 0M384 0h128v128H384zm0 0M0 192h128v128H0zm0 0"
+                    data-original="#bfc9d1" />
+                </g>
+                <path xmlns="http://www.w3.org/2000/svg" d="M192 192h128v128H192zm0 0" fill="currentColor"
+                  data-original="#82b1ff" />
+                <path xmlns="http://www.w3.org/2000/svg"
+                  d="M384 192h128v128H384zm0 0M0 384h128v128H0zm0 0M192 384h128v128H192zm0 0M384 384h128v128H384zm0 0"
+                  fill="currentColor" data-original="#bfc9d1" />
+              </svg>
+              Accueil
+            </a>
+          </div>
+          <div class="active">
+          <a  (click)="side2()">
+            <svg viewBox="3 0 18 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 12c2.761 0 5-2.239 5-5s-2.239-5-5-5-5 2.239-5 5 2.239 5 5 5zm0 2c-4.418 0-8 3.582-8 8v2h16v-2c0-4.418-3.582-8-8-8z" />
+            </svg>
+            Profile
+          </a>
+        </div>
+        </div>
+      </div>
+      <div class="side-wrapper">
+        <div class="side-title">Commande</div>
+        <div class="side-menu">
+          <a (click)="side3()">
+            <svg viewBox="0 0 488.932 488.932" fill="currentColor">
+              <path
+                d="M40 48C26.7 48 16 58.7 16 72v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V72c0-13.3-10.7-24-24-24H40zM192 64c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zm0 160c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H192zM16 232v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V232c0-13.3-10.7-24-24-24H40c-13.3 0-24 10.7-24 24zM40 368c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24H88c13.3 0 24-10.7 24-24V392c0-13.3-10.7-24-24-24H40z" />
+            </svg>
+            Historique
+          </a>
+          <a  (click)="side4()">
+            <svg viewBox="0 0 488.932 488.932" fill="currentColor">
+              <path
+                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+            </svg>
+            Validation
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="profile-form">
+        <h2>Edit Profile</h2>
+        <form>
+          <div class="form-group">
+            <label for="firstName">Prénom</label>
+            <input type="text" id="firstName" name="firstName" >
+          </div>
+          <div class="form-group">
+            <label for="lastName">Nom</label>
+            <input type="text" id="lastName" name="lastName">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="phone">Numéro</label>
+            <input type="text" id="phone" name="phone" >
+          </div>
+          <div class="form-group">
+            <label for="password">Mot de Passe</label>
+            <input type="password" id="password" name="password" >
+          </div>
+          <button type="button" (click)="saveChanges()">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
